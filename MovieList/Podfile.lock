@@ -1,0 +1,36 @@
+PODS:
+  - Alamofire (5.0.5)
+  - Mimus (1.1.4)
+  - Nimble (8.1.1)
+  - Quick (3.0.0)
+  - RxSwift (5.1.1)
+  - SnapKit (5.0.1)
+
+DEPENDENCIES:
+  - Alamofire (~> 5.0.0)
+  - Mimus
+  - Nimble
+  - Quick
+  - RxSwift
+  - SnapKit
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - Mimus
+    - Nimble
+    - Quick
+    - RxSwift
+    - SnapKit
+
+SPEC CHECKSUMS:
+  Alamofire: df2f8f826963b08b9a870791ad48e07a10090b2e
+  Mimus: 7068805e0a10a5d96df46891fed0e5dd59cef832
+  Nimble: 5f8a2fb6fa343a7242dfdd9d42f7267419d464b2
+  Quick: 6d9559f40647bc4d510103842ef2fdd882d753e2
+  RxSwift: 81470a2074fa8780320ea5fe4102807cb7118178
+  SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
+
+PODFILE CHECKSUM: 3648488383d66018f1033f13237592bb4710c6eb
+
+COCOAPODS: 1.9.1

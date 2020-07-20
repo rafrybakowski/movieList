@@ -11,11 +11,26 @@ import UIKit
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-
+    private var navigator: Navigator!
+    private var flowCoordinator: FlowCoordinator!
+    private var windowController: WindowController!
+    private var appearanceChanger: AppearanceChanger!
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        setupNavigationStack()
+        setupAppearance()
         return true
+    }
+    
+    private func setupNavigationStack() {
+        flowCoordinator = FlowCoordinator()
+        navigator = DefaultNavigator(flowCoordinator: flowCoordinator)
+        windowController = WindowController(rootViewController: flowCoordinator.mainNavigationController)
+    }
+    
+    private func setupAppearance() {
+        appearanceChanger = AppearanceChanger()
+        appearanceChanger.setupAppAppearance()
     }
 }
 

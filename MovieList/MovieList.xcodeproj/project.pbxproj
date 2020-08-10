@@ -65,6 +65,8 @@
 		DC794B5724C4999700FCDDEE /* FakeViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC794B5624C4999700FCDDEE /* FakeViewControllerFactory.swift */; };
 		DC794B5924C49A8800FCDDEE /* FakeNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC794B5824C49A8800FCDDEE /* FakeNavigator.swift */; };
 		DC794B5C24C49B0D00FCDDEE /* CurrentMovie+Fixture.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC794B5B24C49B0D00FCDDEE /* CurrentMovie+Fixture.swift */; };
+		DC794B5E24E1C59000FCDDEE /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC794B5D24E1C59000FCDDEE /* SnapshotHelper.swift */; };
+		DC794B6024E1C68D00FCDDEE /* MovieListViewControllerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC794B5F24E1C68D00FCDDEE /* MovieListViewControllerSpec.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -142,6 +144,8 @@
 		DC794B5624C4999700FCDDEE /* FakeViewControllerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeViewControllerFactory.swift; sourceTree = "<group>"; };
 		DC794B5824C49A8800FCDDEE /* FakeNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeNavigator.swift; sourceTree = "<group>"; };
 		DC794B5B24C49B0D00FCDDEE /* CurrentMovie+Fixture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CurrentMovie+Fixture.swift"; sourceTree = "<group>"; };
+		DC794B5D24E1C59000FCDDEE /* SnapshotHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapshotHelper.swift; sourceTree = "<group>"; };
+		DC794B5F24E1C68D00FCDDEE /* MovieListViewControllerSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListViewControllerSpec.swift; sourceTree = "<group>"; };
 		F960041CF199BD024681FBDA /* Pods-MovieList.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MovieList.debug.xcconfig"; path = "Target Support Files/Pods-MovieList/Pods-MovieList.debug.xcconfig"; sourceTree = "<group>"; };
 		FE29A4D8E43D6E87C42D8460 /* Pods-MovieListTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MovieListTests.release.xcconfig"; path = "Target Support Files/Pods-MovieListTests/Pods-MovieListTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -228,6 +232,7 @@
 				DC794B5A24C49AFC00FCDDEE /* Fixtures */,
 				DC794B5524C4998900FCDDEE /* Fakes */,
 				DC68F51324C2F41C001F196D /* Info.plist */,
+				DC794B5D24E1C59000FCDDEE /* SnapshotHelper.swift */,
 			);
 			path = MovieListTests;
 			sourceTree = "<group>";
@@ -264,6 +269,7 @@
 				DC794B1324C31F8900FCDDEE /* MovieListDataSource.swift */,
 				DC68F52A24C2F962001F196D /* MovieListView.swift */,
 				DC68F52724C2F927001F196D /* MovieListViewController.swift */,
+				DC794B5F24E1C68D00FCDDEE /* MovieListViewControllerSpec.swift */,
 			);
 			path = "Movie List";
 			sourceTree = "<group>";
@@ -684,6 +690,8 @@
 				DC794B5924C49A8800FCDDEE /* FakeNavigator.swift in Sources */,
 				DC794B5C24C49B0D00FCDDEE /* CurrentMovie+Fixture.swift in Sources */,
 				DC794B5424C4995300FCDDEE /* FlowCoordinatorSpec.swift in Sources */,
+				DC794B6024E1C68D00FCDDEE /* MovieListViewControllerSpec.swift in Sources */,
+				DC794B5E24E1C59000FCDDEE /* SnapshotHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

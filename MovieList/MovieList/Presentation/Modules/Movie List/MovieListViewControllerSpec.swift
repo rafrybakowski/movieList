@@ -19,10 +19,21 @@ class MovieListViewControllerSpec: QuickSpec {
             var sut: MovieListViewController!
             
             beforeEach {
-                sut = MovieListViewController(currentlyPlayingSynchronizer:
-                    DefaultCurrentlyPlayingSynchronizer(currentlyPlayingPersistor: DefaultCurrentlyPlayingPersistor()),
-                                              searchMoviesSynchronizer: DefaultSearchMoviesSynchronizer(searchMoviesPersistor: DefaultSearchMoviesPersistor()),
-                                              favouriteMoviePersistor: DefaultFavouriteMoviePersistor())
+                
+                let currentlyPlayingPersistor = DefaultCurrentlyPlayingPersistor()
+                let currentlyPlayingSynchronizer = DefaultCurrentlyPlayingSynchronizer(currentlyPlayingPersistor: currentlyPlayingPersistor)
+                let searchMoviesPersistor = DefaultSearchMoviesPersistor()
+                let searchMoviesSynchronizer = DefaultSearchMoviesSynchronizer(searchMoviesPersistor: searchMoviesPersistor)
+                let moviePersistor = DefaultFavouriteMoviePersistor()
+                
+                sut = MovieListViewController(currentlyPlayingSynchronizer: currentlyPlayingSynchronizer,
+                                              searchMoviesSynchronizer: searchMoviesSynchronizer,
+                                              favouriteMoviePersistor: moviePersistor)
+                
+                // Setup the sut
+                // ...
+                
+                // Call lifecycle methods to setup the view hierarchy
                 sut.loadView()
                 sut.viewDidLoad()
             }
@@ -36,7 +47,8 @@ class MovieListViewControllerSpec: QuickSpec {
                 }
                 
                 it("should have proper snapshot") {
-                    expect(view).to(haveValidSnapshot())
+//                    expect(view).to(recordSnapshot()) // recording snapshots
+                    expect(view).to(haveValidSnapshot()) // validating snapshots
                 }
             }
         }

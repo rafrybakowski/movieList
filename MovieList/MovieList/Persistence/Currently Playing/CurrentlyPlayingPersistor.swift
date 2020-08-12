@@ -39,7 +39,6 @@ class DefaultCurrentlyPlayingPersistor: CurrentlyPlayingPersistor {
         self.encoder = encoder
         self.decoder = decoder
         self.userDefaults = userDefaults
-        
         self.currentlyPlayingSubject = BehaviorSubject<[CurrentMovie]>(value: currentMovies)
     }
     

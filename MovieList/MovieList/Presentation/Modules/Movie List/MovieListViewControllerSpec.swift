@@ -19,12 +19,13 @@ class MovieListViewControllerSpec: QuickSpec {
             var sut: MovieListViewController!
             
             beforeEach {
-                
                 let currentlyPlayingPersistor = DefaultCurrentlyPlayingPersistor()
                 let currentlyPlayingSynchronizer = DefaultCurrentlyPlayingSynchronizer(currentlyPlayingPersistor: currentlyPlayingPersistor)
                 let searchMoviesPersistor = DefaultSearchMoviesPersistor()
                 let searchMoviesSynchronizer = DefaultSearchMoviesSynchronizer(searchMoviesPersistor: searchMoviesPersistor)
                 let moviePersistor = DefaultFavouriteMoviePersistor()
+                
+                currentlyPlayingPersistor.save(movies: [CurrentMovie.fixture()])
                 
                 sut = MovieListViewController(currentlyPlayingSynchronizer: currentlyPlayingSynchronizer,
                                               searchMoviesSynchronizer: searchMoviesSynchronizer,
@@ -38,7 +39,7 @@ class MovieListViewControllerSpec: QuickSpec {
                 sut.viewDidLoad()
             }
             
-            describe("when initializing") {
+            context("when initializing") {
                 var view: UIView!
                 
                 beforeEach {

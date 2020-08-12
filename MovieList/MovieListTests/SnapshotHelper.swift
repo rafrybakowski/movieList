@@ -15,8 +15,8 @@ class SnapshotHelper {
     class func setupSnapshotTests() {
         let referenceDir = ProcessInfo.processInfo.environment["FB_REFERENCE_IMAGE_DIR"]
         FBSnapshotTest.setReferenceImagesDirectory(referenceDir)
-        Nimble.AsyncDefaults.Timeout = 5  // Increase the global timeout to 5 seconds
-        Nimble.AsyncDefaults.PollInterval = 0.1 // Slow the polling interval to 0.1 seconds
+        Nimble.AsyncDefaults.Timeout = 5
+        Nimble.AsyncDefaults.PollInterval = 0.1
     }
     class func prepareViewForSnapshotTest(_ view: UIView, snapshotSize: CGSize = CGSize(width: 320, height: 750)) {
         setupSnapshotTests()
